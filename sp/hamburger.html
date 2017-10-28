@@ -1,0 +1,102 @@
+<script>
+    /*
+    var WindowHeight = $(window).height();
+    var WindowWidth = $(window).width();
+    $(function () {
+        $('.section').css('height', WindowHeight - 144 + 'px');
+        $('.section').css('width', WindowWidth + 'px');
+
+        if (WindowHeight > 0) {
+            $('.wh').css('height', WindowHeight + '144px');
+        }
+    });*/
+
+    $(function () {
+        $('.DSbtn').on('touchstart', function (event) {
+            var $target = $(event.target);
+            if ($target.is("li")) {
+                $target.trigger("touchstart");
+            }
+            if ($('.DSmenu').is('.action') && $('.menu').is('.active')) {
+                setTimeout(function () {
+                    $('.btn_top').addClass('active');
+                }, 100);
+            } else {
+                $('.btn_top').removeClass('active');
+            }
+            $(this).toggleClass('action');
+            $('.DSmenu').toggleClass('action');
+            $('.section').toggleClass('blur');
+        });
+        $('.section').on('touchstart', function () {
+            if ($('.DSmenu').is('.action') && $('.menu').is('.active')) {
+                setTimeout(function () {
+                    $('.btn_top').addClass('active');
+                }, 100);
+            } else if (!$('.menu').is('.active')) {
+                $('.btn_top').removeClass('active');
+            }
+            $('.DSbtn').removeClass('action');
+            $('.DSmenu').removeClass('action');
+            $('.section').removeClass('blur');
+
+        });
+
+
+        $('.section').on('touchstart', function () {
+            $(this).data('startX', event.touches[0].pageX).data('startY', event.touches[0].pageY).data('moveX', 0).data('moveY', 0);
+        }).on('touchmove', function () {
+            $(this)
+                .data('moveX', event.touches[0].pageX - $(this).data('startX'))
+                .data('moveY', event.touches[0].pageY - $(this).data('startY'));
+        }).on('touchend', function () {
+            if ($(this).data('moveX') > 250) {
+                $('.DSmenu').toggleClass('action');
+                $('.section').toggleClass('blur');
+                $('.DSbtn').addClass('action');
+            }
+        })
+
+    });
+
+</script>
+
+<div class="container" id="title_area" style="text-align:center">
+    <div class="row">
+        <div style="text-align:left">
+
+            <div class="DSbtn">
+                <div class="hambarg"></div>
+                <div class="hambarg"></div>
+                <div class="hambarg"></div>
+            </div>
+            <div class="wh DSmenu" style="padding-top:25%">
+                <ul>
+                    <a href="sp_about.html">
+                        <li>高専祭について</li>
+                    </a>
+                    <a href="sp_access.html">
+                        <li>アクセス</li>
+                    </a>
+                    <a href="sp_event.html">
+                        <li>企画</li>
+                    </a>
+                    <a href="sp_store.html">
+                        <li>模擬店</li>
+                    </a>
+                    <a href="sp_department.html">
+                        <li>学科展示</li>
+                    </a>
+                    <a href="sp_other.html">
+                        <li>その他展示</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <a href="index.html">
+                <img src="./assets/images/logo.png" width=70% vspace=2%>
+            </a>
+        </div>
+    </div>
+</div>

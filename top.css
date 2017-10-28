@@ -1,0 +1,77 @@
+#top {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background: url("img/top/one.png") 220px 360px no-repeat, url("img/top/logo.png") 22px 23px no-repeat, url("img/top/date.png") 322px 35px no-repeat;
+    -pie-background: url("img/top/one.png") 286px 175px no-repeat, url("img/top/logo.png") 22px 39px no-repeat, url("img/top/date.png") 322px 51px no-repeat;
+    height: 768px;
+    zoom: 1;
+    behavior: url(PIE.htc);
+}
+
+a.btn_top {
+	width: 182px;
+	height: 182px;
+	position: absolute;
+}
+
+/* トップページ各種ボタン */
+a.btn_about {
+	background: url('img/top/btn_about.png') left 0 no-repeat;
+	left: 72px;
+	top: 206px;
+}
+
+a.btn_about:hover {
+	background-position: 0 -182px;
+}
+
+a.btn_access {
+	background: url('img/top/btn_access.png') left 0 no-repeat;
+	left: 100px;
+	top: 581px;
+}
+
+a.btn_access:hover {
+	background-position: 0 -182px;
+}
+
+a.btn_katen {
+	background: url('img/top/btn_katen.png') left 0 no-repeat;
+	left: 697px;
+	top: 173px;
+}
+
+a.btn_katen:hover {
+	background-position: 0 -182px;
+}
+
+a.btn_tenzi {
+	background: url('img/top/btn_tenzi.png') left 0 no-repeat;
+	left: 760px;
+	top: 366px;
+}
+
+a.btn_tenzi:hover {
+	background-position: 0 -182px;
+}
+
+a.btn_mogiten {
+	background: url('img/top/btn_mogiten.png') left 0 no-repeat;
+	left: 744px;
+	top: 568px;
+}
+
+a.btn_mogiten:hover {
+	background-position: 0 -182px;
+}
+
+a.btn_kikaku {
+	background: url('img/top/btn_kikaku.png') left 0 no-repeat;
+	left: 49px;
+	top: 399px;
+}
+
+a.btn_kikaku:hover {
+	background-position: 0 -182px;
+}

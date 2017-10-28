@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/sp.css">
+    <script src="./assets/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascripts/sp.js"></script>
+    <title>第51回 奈良高専　高専祭</title>
+</head>
+
+<body>
+    <div id="hamburger"></div>
+    <div class="section">
+        <div class="page">
+            <div id="department_text">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="department_btn">
+                            <div class="de_btn_icon" id="mechanical_button">
+                                <img src="./assets/images/Mka.png" width="100%" height="auto">
+                            </div>
+                            <div class="de_btn_text">機械</div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="department_btn">
+                            <div class="de_btn_icon" id="electrical_button">
+                                <img src="./assets/images/Eka.png" width="100%" height="auto">
+                            </div>
+                            <div class="de_btn_text">電気</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="department_btn">
+                            <div class="de_btn_icon" id="control_button">
+                                <img src="./assets/images/Ska.png" width="100%" height="auto">
+                            </div>
+                            <div class="de_btn_text">電子制御</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="department_btn">
+                            <div class="de_btn_icon" id="information_button">
+                                <img src="./assets/images/Ika.png" width="100%" height="auto">
+                            </div>
+                            <div class="de_btn_text">情報</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="department_btn">
+                            <div class="de_btn_icon" id="chemical_button">
+                                <img src="./assets/images/Cka.png" width="100%" height="auto">
+                            </div>
+                            <div class="de_btn_text">物質化学</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="first_department_text" class="text" style="display:block">
+                    <h1 class="sample">学科展示</h1>
+                    奈良高専の5つの学科の活動紹介や制作物の展示をしております。
+                    <br>日常生活では知る事の出来ない機械の仕組みや自然の現象、電気の性質など様々な分野について体験していただくことが出来ますので、ぜひお越しください！
+                </div>
+
+                <div class="text" id="mechanical_text">
+                    <h1 class="sample">機械工学科展</h1>
+                    <span class="red_line_narrow">場所：物理実験室</span>
+                    <br>
+                    <h2>テキサン</h2>
+                    校門近くにある飛行機の「テキサン」を知っていますか？
+                    <br> テキサンの老朽化した部分を修復する「テキサンレストアプロジェクト」が機械工学科で進められています。
+                    <br> 興味のある方は是非機械工学科展まで！
+                    <h2>LaQ</h2>
+                    奈良吉野発の知育玩具"LaQ"で作られた動く遊園地が展示されています。また、LaQで小さな鹿を作れるので、LaQを手軽に楽しく体験してみたい方は是非お越しください！
+                    <h2>テッポウエビ</h2>
+                    ハサミを閉じるだけで近くの小魚を気絶させることができる「テッポウエビ」をご存知ですか？ハイスピードカメラによる撮影など、奈良高専ならではの方法でテッポウエビを解明しています。
+                    <br>この活動を通し、奈良高専のおもしろさを紹介します。
+                </div>
+
+                <div class="text" id="electrical_text">
+                    <h1 class="sample">電気工学科展</h1>
+                    <span class="yellow_line_narrow">場所：1年電子制御工学科教室（1S教室）</span>
+                    <br> 電気工学科の学生たちが作った電気工作を中心に、小さい子でも楽しめるものを展示しています。見てふれて学んで遊べるブースです。
+                    <br> この機会に電気について詳しくなろう！
+                </div>
+
+                <div class="text" id="control_text">
+                    <h1 class="sample">電子制御工学科展</h1>
+                    <span class="blue_line_narrow">場所：1年機械工学科教室（1M教室）</span>
+                    <br> 今年チャレンジいたしましたのは、磁性流体時計の製作です。磁性流体とは、液体状のものが磁石を近づけると磁石に反応して動くものです。それを使い時計を作りました。他には昨年展示していた自動ハンドベル演奏機の演奏や2足歩行ロボットの展示、レゴマインドストームを使ったラジコンなどがあります。みなさんぜひ電子制御工学科展に足を運んでください！
+                    <p class="aa">
+                        <img src="./assets/images/201724.jpg">
+                    </p>
+                </div>
+
+                <div class="text" id="information_text">
+                    <h1 class="sample">情報工学科展</h1>
+                    <span class="blue_line_narrow">場所：2年情報工学科教室（2I教室）</span>
+                    <br> 今年も情報工学展は、趣味方向から新分野まで、幅広く行います！
+                    <br>
+                    <br>
+                    <span class="blue_line_narrow">展示内容</span>
+                    <br>
+                    <span class="indent_section">
+                        ・セキュリティ:
+                        <div class="indent_block" style="width: -webkit-calc(100% - 8em)">
+                            そのカメラ、問題につき（不正アクセス、ダメ、ゼッタイ）
+                            <br> ネットワークカメラへのハッキング実演
+                        </div>
+                        ・VR
+                        <span>　　　　</span>:
+                        <div class="indent_block" style="width: -webkit-calc(100% - 8em)">
+                            ついに奈良高専もVR化
+                            <br>VR高専
+                        </div>
+                        <br> ・音楽ゲーム
+                        <span></span>:
+                        <div class="indent_block" style="width: -webkit-calc(100% - 8em)">
+                            工業系高専生による自主制作ゲーム
+                            <br>Wave-Tone
+                        </div>
+                    </span>
+
+                    <br> 今年の情報工学科展もよろしくお願いします！！
+                </div>
+
+                <div class="text" id="chemical_text">
+                    <h1 class="sample">物質化学工学科展</h1>
+                    <span class="green_line_narrow">場所：化学実験室</span>
+                    <br> C科展では来場された皆さんに化学の楽しさ、面白さを伝えるために目の前で不思議な化学実験を行います。
+                    <br> さらに、皆さんにより近く「化学」に触れてもらうため、子供用白衣の貸出し、また今回は実際に「やってみる」をテーマとした体験型の実験を展示しております。
+                    <br> 小学生の皆さん！
+                    <br> 来たら夏休み、冬休みの自由研究が大成功すること間違いなし！
+                    <br> 中学生の皆さん！
+                    <br> 高専の物質化学工学科に入学を検討中なら、説明会とはまた違った見学ができる良い機会ですよ！
+                    <br> 是非、老若男女問わずお越しください。
+                    <p class="aa">
+                        <img src="./assets/images/C_ka.jpg">
+                    </p>
+                </div>
+            </div>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

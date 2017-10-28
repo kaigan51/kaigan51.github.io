@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./assets/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./assets/stylesheets/sp.css" rel="stylesheet" type="text/css">
+    <script src="./assets/javascripts/jquery.min.js">
+    </script>
+    <script src="./assets/javascripts/sp.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnDUy-qTaGm7rSFDdKcbkJADSaqps1OlU&callback=initMap" async
+        defer></script>
+    <title>第51回 奈良高専 高専祭</title>
+</head>
+
+<body>
+    <div id="hamburger"></div>
+    <div class="section" id="access_text" style="width: 100%">
+
+        <div class="page">
+            <h1 class="sample">アクセス</h1>
+
+            <h2>奈良高専までのアクセス</h2>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var uluru = { lat: 34.648044, lng: 135.757263 };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+
+            <span class="indent_section" style="font-size:4vw">
+                ・住所：
+                <div class="indent_block" style="width:-webkit-calc(100% - 5em)">
+                    <span class="red_line">〒639-1058</span>
+                    <br>
+                    <span class="red_line">奈良県大和郡山市矢田町22</span>
+                </div>
+            </span>
+
+            <h2>最寄り駅までのアクセス</h2>
+            <div class="text-center">
+                <img src="./assets/images/bigmap.png">
+            </div>
+
+            <h2>最寄り駅からのアクセス</h2>
+            <div class="text-center">
+                <img src="./assets/images/map.png">
+            </div>
+
+            <h3 class="red_line">・近鉄郡山駅よりお越しの場合</h3>
+            <br> 「近鉄郡山駅」バス停より、奈良交通「小泉駅東口」または「矢田寺前」行バスへご乗車いただき「奈良高専」にて下車して下さい。
+            <br> ー所有時間：約15分
+            <br> ー大人運賃:270円
+            <br>
+            <a href="http://jikoku.narakotsu.co.jp/form/asp/ejhr0070.asp?daykind=2&fromcd=361&tocd=369">バス時刻表(土曜日用ダイヤ)</a>
+            <br>
+            <a href="http://jikoku.narakotsu.co.jp/form/asp/ejhr0070.asp?daykind=3&fromcd=361&tocd=369">バス時刻表(日曜・祝日用ダイヤ)</a>
+            <br>
+            <br>
+            <h3 class="red_line">・JR大和小泉駅よりお越しの場合</h3>
+            <br> 「小泉駅東口」バス停より、奈良交通「近鉄郡山駅」行バスへご乗車いただき「奈良高専」にて下車して下さい。
+            <br> ー所有時間：約20分
+            <br> ー大人運賃:310円
+            <br>
+            <a href="http://jikoku.narakotsu.co.jp/form/asp/ejhr0070.asp?daykind=2&fromcd=325&tocd=369">バス時刻表(土曜日用ダイヤ)</a>
+            <br>
+            <a href="http://jikoku.narakotsu.co.jp/form/asp/ejhr0070.asp?daykind=3&fromcd=325&tocd=369">バス時刻表(日曜・祝日用ダイヤ)</a>
+            <br>
+            <br>
+
+            <span class="indent_section important_text">
+                ※
+                <div class="indent_block">
+                    <span class="red_line_narrow">駐車場はございませんので、ご来場には公共の交通機関をご利用ください。</span>
+                </div>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
