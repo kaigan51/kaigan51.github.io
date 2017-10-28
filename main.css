@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background: url('img/bg.jpg') left top;
-    background-size:cover;
+	background-size:cover;
+	background-attachment: fixed;
     font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
     font-size: 90%;
 }
