@@ -2,7 +2,7 @@
     width: 1000px;
     margin: 0 auto;
     position: relative;
-    background: url("img/top/one.png") 220px 360px no-repeat, url("img/top/logo.png") 22px 23px no-repeat, url("img/top/date.png") 322px 35px no-repeat;
+	background: url("img/top/one.png") 220px 360px no-repeat, url("img/top/logo.png") 22px 23px no-repeat, url("img/top/date.png") 322px 35px no-repeat;
     -pie-background: url("img/top/one.png") 286px 175px no-repeat, url("img/top/logo.png") 22px 39px no-repeat, url("img/top/date.png") 322px 51px no-repeat;
     height: 768px;
     zoom: 1;
