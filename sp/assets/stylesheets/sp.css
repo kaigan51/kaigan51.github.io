@@ -329,7 +329,7 @@ a.btn_kikaku {
 .DSmenu {
     will-change:translate;
     width:500px;
-    height: 101vh;
+    height: 100vh;
     background:rgb(73, 73, 73);
     -webkit-transform:translate3d(-500px,0,0);
     transform:translate3d(-500px,0,0);
