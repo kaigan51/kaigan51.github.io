@@ -80,12 +80,6 @@ $(function () {
 
 })
 
-$(document).ready(function () {
-  //文字曲げる
-  $(".top_logo.top").arctext({ radius: 400, dir: 1 });
-  $(".top_logo.down").arctext({ radius: 400, dir: -1 });
-});
-
 
 
 
