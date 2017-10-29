@@ -6,23 +6,16 @@
     <link rel="preload" href="./assets/Font/03スマートフォントUI.otf" as="font">
     <link rel="preload" href="./assets/Font/851H-kktt.ttf" as="font">
     <link rel="preload" href="./assets/stylesheets/sp.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="./hamburger.html" as="html">
     <link href="./assets/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="./assets/stylesheets/sp.css" rel="stylesheet" type="text/css">
     <link href="./assets/stylesheets/sp_top.css" rel="stylesheet" type="text/css">
-    <script src="./assets/javascripts/jquery.min.js"></script>
-    <script src="./assets/javascripts/sp.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./assets/stylesheets/fakeLoader.css">
 
-
-    <script>
-        $('<img src="./assets/images/top_logo.png">');
-        $('<img src="./assets/images/bg.jpg">');
-    </script>
     <title>第51回 奈良高専 高専祭</title>
 </head>
 
 <body>
-
+    <div id="fakeLoader"></div>
     <div id="layer">
         <a>
             <span></span>
@@ -152,7 +145,20 @@
         </div>
 
     </div>
-
+    <script src="./assets/javascripts/jquery.min.js"></script>
+    <script src="./assets/javascripts/sp.js" type="text/javascript"></script>
+    <script src="./assets/javascripts/fakeLoader.min.js"></script>
+    <script>
+        $("#fakeLoader").fakeLoader({
+            timeToHide: 4000, //Time in milliseconds for fakeLoader disappear
+            zIndex: 999, // Default zIndex
+            spinner: "spinner2",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+            bgColor: "rgb(0, 0, 0)", //Hex, RGB or RGBA colors
+            // imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
+        });
+        $('<img src="./assets/images/top_logo.png">');
+        $('<img src="./assets/images/bg.jpg">');
+    </script>
 
 </body>
 

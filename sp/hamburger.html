@@ -57,6 +57,14 @@
                 $('.DSbtn').addClass('action');
             }
         })*/
+        var ua = navigator.userAgent;
+        if (ua.indexOf('Android') > 0) {
+            $(".DSbtn").css({
+                "transform": "translateZ(0)",
+                "-webkit-transform": "translateZ(0)",
+            });
+        }
+
 
     });
 

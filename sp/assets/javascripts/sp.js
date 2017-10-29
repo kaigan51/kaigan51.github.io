@@ -77,6 +77,21 @@ $(function () {
     }
   });
 
+  var ua = navigator.userAgent;
+  if (ua.indexOf('Android') > 0) {
+    $(".container_menu,.section").css({
+      "transform": "translateZ(0)",
+      "-webkit-transform": "translateZ(0)",
+    });
+
+
+    $("#icon_btn").css({
+      "transform": "translateZ(0 scale(1.3)",
+      "-webkit-transform": "translateZ(0) scale(1.3)",
+    });
+
+  }
+
 
 })
 
