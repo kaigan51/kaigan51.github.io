@@ -17,12 +17,11 @@ body{
     display: block;
     color:white;
     font-weight: 2px;
-    width: 100%;
-    height: 100%;
+
     font-size: 3.5em;
     font-family: SmartFont;
     overflow: hidden;
-    min-width:950px;
+
     box-sizing:border-box;
 }
 
