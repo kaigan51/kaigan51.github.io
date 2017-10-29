@@ -583,11 +583,11 @@ td:last-child{
     line-height: 38px; /* 見出しの高さの幅 */
 }
 
-#about_text .sample:first-letter,#control_text .sample:first-letter{
+#about_text .sample:first-letter,#information_text .sample:first-letter{
     color: rgb(74, 107, 252); /* テキスト色 */
 }
 
-#about_text .sample,#control_text .sample{
+#about_text .sample,#information_text .sample{
     border-bottom: 10px double rgb(74, 107, 252);;
 }
 
@@ -608,11 +608,11 @@ td:last-child{
 }
 
 
-#store_text .sample:first-letter{
+#store_text .sample:first-letter,#chemical_text .sample:first-letter{
     color: rgb(210, 90, 216); /* テキスト色 */
 }    
 
-#store_text .sample{
+#store_text .sample,#chemical_text .sample{
     border-bottom: 10px double rgb(210, 90, 216);
 }
 
@@ -620,29 +620,22 @@ td:last-child{
     font-size: 2.7em;
 }
 
-#first_department_text .sample:first-letter{
+#first_department_text .sample:first-letter,#control_text .sample:first-letter{
     color: rgb(15, 158, 2); /* テキスト色 */
 }    
 
-#first_department_text .sample{
+#first_department_text .sample,#control_text .sample{
     border-bottom: 10px double rgb(15, 158, 2);
 }
 
-#other_text .sample:first-letter,#chemical_text .sample:first-letter{
+#other_text .sample:first-letter{
     color: rgb(118, 255, 171); /* テキスト色 */
 }    
 
-#other_text .sample,#chemical_text .sample{
+#other_text .sample{
     border-bottom: 10px double rgb(118, 255, 171);
 }
 
-#information_text .sample:first-letter{
-    color: rgb(31, 168, 231); /* テキスト色 */
-}
-
-#information_text .sample{
-    border-bottom: 10px double rgb(31, 168, 231);
-}
 
 /* line 136, ../sass/sp_top.scss */
 h2 {
