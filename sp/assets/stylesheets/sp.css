@@ -150,6 +150,7 @@ p{
     height: 15%;
     align-items: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden
 }
 
 #time_area .date_text{
@@ -247,6 +248,8 @@ p{
     background: rgba(255, 255, 255, 0.36);
     border-radius: 50%;
     pointer-events: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .btn_top {
@@ -361,6 +364,7 @@ a.btn_kikaku {
     cursor:pointer;
     z-index:999;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden
 }
 .DSbtn.action {
 }
@@ -924,5 +928,6 @@ h2 {
 
   .icons{
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden
   }
 
